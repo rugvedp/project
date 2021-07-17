@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_2s",
+  "info": {
+    "name": "teacher",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "teacher_name": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "biginteger"
+    },
+    "students": {
+      "collection": "student"
+    },
+    "student": {
+      "via": "teacher",
+      "collection": "student"
+    },
+    "principleofschool": {
+      "via": "teachers",
+      "model": "principleofschool"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teacherforschools",
+      "handler": "teacherforschool.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacherforschools/count",
+      "handler": "teacherforschool.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teacherforschools/:id",
+      "handler": "teacherforschool.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teacherforschools",
+      "handler": "teacherforschool.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teacherforschools/:id",
+      "handler": "teacherforschool.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teacherforschools/:id",
+      "handler": "teacherforschool.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

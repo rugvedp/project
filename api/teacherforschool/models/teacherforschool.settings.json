@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teacherforschools",
+  "info": {
+    "name": "teacherforschool",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "biginteger"
+    },
+    "principleofschool": {
+      "model": "principleofschool",
+      "via": "teacherforschools"
+    },
+    "students": {
+      "collection": "student",
+      "via": "teacherforschool"
+    }
+  }
+}

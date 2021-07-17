@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "name": "school"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "biginteger"
+    },
+    "principleofschool": {
+      "model": "principleofschool"
+    },
+    "numberofstudents": {
+      "type": "integer"
+    }
+  }
+}

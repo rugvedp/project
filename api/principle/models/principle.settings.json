@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "principles",
+  "info": {
+    "name": "principle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

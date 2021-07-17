@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "school_1s",
+  "info": {
+    "name": "school",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "school_name": {
+      "type": "string"
+    },
+    "students_count": {
+      "type": "biginteger"
+    },
+    "principle_name": {
+      "type": "string"
+    },
+    "number_of_teacher": {
+      "type": "integer"
+    }
+  }
+}

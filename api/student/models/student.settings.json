@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "Student",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student_name": {
+      "type": "string"
+    },
+    "roll_no": {
+      "type": "integer",
+      "unique": false,
+      "required": true
+    },
+    "teacher": {
+      "model": "school-2",
+      "via": "student"
+    },
+    "teacherforschool": {
+      "via": "students",
+      "model": "teacherforschool"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "principleofschools",
+  "info": {
+    "name": "principleofschool",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "biginteger"
+    },
+    "joining": {
+      "type": "date"
+    },
+    "teachers": {
+      "collection": "school-2",
+      "via": "principleofschool"
+    },
+    "teacherforschools": {
+      "via": "principleofschool",
+      "collection": "teacherforschool"
+    }
+  }
+}
